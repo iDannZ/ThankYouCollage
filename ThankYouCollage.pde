@@ -4,11 +4,12 @@ PImage img2;
 void setup() {
   size(1000, 600);
   background(255);
+   img2= loadImage("punching.jpg");
+   img = loadImage("Guarding.jpg");
 }
 
 void draw() {
   if (mousePressed) {
-    img2= loadImage("punching.jpg");
     image(img2, -200, 100);
     fill(0,10,100);
     rect(500, 0, 500, 600);
@@ -49,7 +50,6 @@ void draw() {
     text("and all the years too come.", 600,280);
 
   } else {
-    img = loadImage("Guarding.jpg");
     image (img, -200, 100);
     stroke(255);
     strokeWeight(8);
